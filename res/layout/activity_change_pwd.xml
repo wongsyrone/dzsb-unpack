@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/rl_title" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="@dimen/dimens_48">
+        <ImageButton android:id="@id/ib_back" android:background="@null" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginLeft="@dimen/dimens_10" android:src="@mipmap/icon_back" android:layout_centerVertical="true" />
+        <TextView android:textSize="18.0sp" android:textColor="@color/text_orange" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="修改密码" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <View android:background="@color/cl_line_gray1" android:layout_width="fill_parent" android:layout_height="@dimen/dimens_1px" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/edit_view_bg" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="10.0dip">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/icon_password" />
+        <EditText android:textSize="14.0sp" android:textColorHint="@color/gray" android:id="@id/password_input_old" android:background="@android:color/white" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/change_pwd_edit_tips" android:singleLine="true" android:inputType="textPassword" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/edit_view_bg" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="10.0dip">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/icon_password" />
+        <EditText android:textSize="14.0sp" android:textColorHint="@color/gray" android:id="@id/password_input_new" android:background="@android:color/white" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/change_pwd_edit_tips2" android:singleLine="true" android:inputType="textPassword" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/edit_view_bg" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="10.0dip">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/icon_password" />
+        <EditText android:textSize="14.0sp" android:textColorHint="@color/gray" android:id="@id/password_input_new_again" android:background="@android:color/white" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/change_pwd_edit_tips3" android:singleLine="true" android:inputType="textPassword" />
+    </LinearLayout>
+    <TextView android:textSize="17.0sp" android:textColor="@android:color/white" android:gravity="center" android:id="@id/tv_change" android:background="@drawable/shape_login_button_bg" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="10.0dip" android:text="@string/change_pwd_sumbit" />
+</LinearLayout>

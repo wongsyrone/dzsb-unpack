@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.mvw.nationalmedicalPhone">
+    <permission android:name="com.mvw.nationalmedicalPhone.permission.JPUSH_MESSAGE" android:protectionLevel="signature"/>
+    <permission android:name="com.mvw.nationalmedicalPhone.permission.MIPUSH_RECEIVE" android:protectionLevel="signature"/>
+    <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:resizeable="true" android:smallScreens="true"/>
+    <uses-permission android:name="com.huawei.android.launcher.permission.CHANGE_BADGE"/>
+    <uses-permission android:name="com.mvw.nationalmedicalPhone.permission.permission.MIPUSH_RECEIVE"/>
+    <uses-permission android:name="com.mvw.nationalmedicalPhone.permission.JPUSH_MESSAGE"/>
+    <uses-permission android:name="com.vivo.notification.permission.BADGE_ICON"/>
+    <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-feature android:name="android.hardware.camera"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="com.htc.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.READ_LOGS"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="com.mvw.nationalmedicalPhone.permission.JPUSH_MESSAGE"/>
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <queries>
+        <intent>
+            <action android:name="com.huawei.hms.core.aidlservice"/>
+        </intent>
+    </queries>
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera.front" android:required="false"/>
+    <uses-feature android:name="android.hardware.microphone" android:required="false"/>
+    <permission android:name="com.mvw.nationalmedicalPhone.permission.PROCESS_PUSH_MSG" android:protectionLevel="signature"/>
+    <permission android:name="com.mvw.nationalmedicalPhone.permission.PUSH_PROVIDER" android:protectionLevel="signature"/>
+    <permission android:name="com.mvw.nationalmedicalPhone.permission.PUSH_WRITE_PROVIDER" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.mvw.nationalmedicalPhone.permission.PROCESS_PUSH_MSG"/>
+    <uses-permission android:name="com.mvw.nationalmedicalPhone.permission.PUSH_PROVIDER"/>
+    <uses-permission android:name="android.permission.FLASHLIGHT"/>
+    <uses-feature android:name="android.hardware.camera.flash" android:required="false"/>
+    <uses-permission android:name="com.huawei.appmarket.service.commondata.permission.GET_COMMON_DATA"/>
+    <application android:allowBackup="true" android:hardwareAccelerated="true" android:icon="@mipmap/ic_logo" android:label="@string/app_name" android:largeHeap="true" android:name="com.mvw.nationalmedicalPhone.application.MyApplication" android:networkSecurityConfig="@xml/network_security_config" android:resizeableActivity="false" android:supportsRtl="true" android:theme="@style/AppTheme" android:usesCleartextTraffic="true">
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.mvw.nationalmedicalPhone.activity.SplashActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Welcome">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="splash" android:scheme="mvw"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:largeHeap="true" android:launchMode="singleTask" android:name="com.mvw.nationalmedicalPhone.activity.LiveActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize|uiMode" android:largeHeap="true" android:launchMode="singleTask" android:name="com.mvw.nationalmedicalPhone.activity.MainActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize|uiMode" android:name="com.mvw.nationalmedicalPhone.activity.WebActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.mvw.nationalmedicalPhone.activity.PdfReaderActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.mvw.nationalmedicalPhone.activity.MemberActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.mvw.nationalmedicalPhone.activity.CourseWebActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.mvw.nationalmedicalPhone.activity.NavigationWebActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.mvw.nationalmedicalPhone.activity.URLWebActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:name="com.mvw.nationalmedicalPhone.activity.BookStoreActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="singleTask" android:name="com.mvw.nationalmedicalPhone.activity.GuideActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="singleTask" android:name="com.mvw.nationalmedicalPhone.activity.LoginActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="singleTask" android:name="com.mvw.nationalmedicalPhone.activity.CameraActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="singleTask" android:name="com.mvw.nationalmedicalPhone.activity.RegisterActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="singleTask" android:name="com.mvw.nationalmedicalPhone.activity.FindPasswordActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.mvw.nationalmedicalPhone.activity.ResetPasswordActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.mvw.nationalmedicalPhone.activity.SettingActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.mvw.nationalmedicalPhone.activity.PlayDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.mvw.nationalmedicalPhone.activity.HelpActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.mvw.nationalmedicalPhone.activity.ChangePwdActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.mvw.nationalmedicalPhone.activity.FeedbackActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.mvw.nationalmedicalPhone.activity.VersionInfoActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.mvw.nationalmedicalPhone.activity.RechargeRecordActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.mvw.nationalmedicalPhone.activity.PayPointActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.mvw.nationalmedicalPhone.activity.UserInfoActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.mvw.nationalmedicalPhone.activity.UserMoreInfoActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:launchMode="singleTask" android:name="com.mvw.nationalmedicalPhone.activity.CaptureActivity2" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:launchMode="singleTask" android:name="com.mvw.nationalmedicalPhone.activity.TeacherActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="singleTask" android:name="com.mvw.nationalmedicalPhone.activity.BindingPhoneActivity" android:theme="@style/BindDialog"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="singleTask" android:name="com.mvw.nationalmedicalPhone.activity.VideoActivity" android:screenOrientation="landscape"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.mvw.nationalmedicalPhone.activity.InvoiceActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.mvw.nationalmedicalPhone.activity.InvoiceInfoActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.mvw.nationalmedicalPhone.activity.InvoiceRecordActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.mvw.nationalmedicalPhone.activity.InvoiceRecordInfoActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.mvw.nationalmedicalPhone.activity.InvoiceStateActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.mvw.nationalmedicalPhone.activity.InvoiceDetailedActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.mvw.nationalmedicalPhone.activity.WeChatPhoneActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.mvw.nationalmedicalPhone.activity.UnbindActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.mvw.nationalmedicalPhone.activity.PrivacyActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.mvw.nationalmedicalPhone.activity.SimplePlayer" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/app_name" android:name="com.artifex.mupdfdemo.ChoosePDFActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/app_name" android:name="com.artifex.mupdfdemo.MuPDFActivity" android:screenOrientation="portrait" android:theme="@style/Theme.PDF">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="application/vnd.ms-xpsdocument"/>
+                <data android:mimeType="application/xps"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="application/pdf"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="application/x-cbz"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="file"/>
+                <data android:mimeType="*/*"/>
+                <data android:pathPattern=".*\\.xps"/>
+                <data android:host="*"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="file"/>
+                <data android:mimeType="*/*"/>
+                <data android:pathPattern=".*\\.pdf"/>
+                <data android:host="*"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="file"/>
+                <data android:mimeType="*/*"/>
+                <data android:pathPattern=".*\\.cbz"/>
+                <data android:host="*"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/outline_title" android:name="com.artifex.mupdfdemo.OutlineActivity" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/print" android:name="com.artifex.mupdfdemo.PrintDialogActivity" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:exported="false" android:name="cn.jpush.android.ui.PopWinActivity" android:theme="@style/MyDialogStyle">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="com.mvw.nationalmedicalPhone"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:exported="false" android:name="cn.jpush.android.ui.PushActivity" android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <action android:name="cn.jpush.android.ui.PushActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="com.mvw.nationalmedicalPhone"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="true" android:launchMode="singleTop" android:name="com.mvw.nationalmedicalPhone.wxapi.WXPayEntryActivity" android:theme="@style/Theme.PDF"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="true" android:launchMode="singleTask" android:name="com.mvw.nationalmedicalPhone.wxapi.WXEntryActivity" android:taskAffinity="com.mvw.nationalmedicalPhone" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:launchMode="singleTask" android:name="com.umeng.qq.tencent.AuthActivity" android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="tencent1104866883"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.umeng.qq.tencent.AssistActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <meta-data android:name="com.mvw.nationalmedicalPhone.config.GlideModelConfig" android:value="GlideModule"/>
+        <meta-data android:name="JPUSH_CHANNEL" android:value="developer-default"/>
+        <meta-data android:name="JPUSH_APPKEY" android:value="500cf70ac160b703fa6ddd51"/>
+        <meta-data android:name="UMENG_APPKEY" android:value="556be37e67e58e4a97000b4e"/>
+        <meta-data android:name="UMENG_CHANNEL" android:value="Android Channel"/>
+        <meta-data android:name="com.amap.api.v2.apikey" android:value="a310db2f09db48af3d53d5bc1cfdbbd3"/>
+        <provider android:authorities="com.mvw.nationalmedicalPhone.DataProvider" android:exported="false" android:name="cn.jpush.android.service.DataProvider" android:process=":pushcore"/>
+        <provider android:authorities="com.mvw.nationalmedicalPhone.fileprovider" android:exported="false" android:grantUriPermissions="true" android:name="android.support.v4.content.FileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_paths"/>
+        </provider>
+        <provider android:authorities="com.mvw.nationalmedicalPhone.DownloadProvider" android:exported="true" android:name="cn.jpush.android.service.DownloadProvider"/>
+        <receiver android:name="com.mvw.nationalmedicalPhone.receiver.MyReceiver">
+            <intent-filter android:priority="1000">
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="true" android:exported="false" android:name="cn.jpush.android.service.PushReceiver">
+            <intent-filter android:priority="1000">
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY"/>
+                <category android:name="com.mvw.nationalmedicalPhone"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT"/>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED"/>
+                <action android:name="android.intent.action.PACKAGE_REMOVED"/>
+                <data android:scheme="package"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="cn.jpush.android.service.AlarmReceiver"/>
+        <receiver android:enabled="true" android:exported="false" android:name="com.mvw.nationalmedicalPhone.receiver.JpushReceiver">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTRATION"/>
+                <action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED"/>
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED"/>
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED"/>
+                <action android:name="cn.jpush.android.intent.CONNECTION"/>
+                <category android:name="com.mvw.nationalmedicalPhone"/>
+            </intent-filter>
+        </receiver>
+        <service android:enabled="true" android:exported="true" android:name="com.mvw.nationalmedicalPhone.service.MyService"/>
+        <service android:exported="false" android:name="com.mvw.nationalmedicalPhone.service.BookDownloadService"/>
+        <service android:exported="false" android:name="com.mvw.nationalmedicalPhone.service.BookUpdateService"/>
+        <service android:exported="false" android:name="com.mvw.nationalmedicalPhone.service.UpdateService"/>
+        <service android:enabled="true" android:exported="false" android:name="cn.jpush.android.service.DownloadService"/>
+        <service android:enabled="true" android:exported="true" android:name="cn.jpush.android.service.DaemonService">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.DaemonService"/>
+                <category android:name="com.mvw.nationalmedicalPhone"/>
+            </intent-filter>
+        </service>
+        <service android:name="com.amap.api.location.APSService"/>
+        <service android:label="dexopt" android:name="com.tencent.smtt.export.external.DexClassLoaderProviderService" android:process=":dexopt"/>
+        <uses-library android:name="android.test.runner"/>
+        <service android:enabled="true" android:exported="false" android:name="com.mvw.nationalmedicalPhone.service.JService" android:process=":pushcore">
+            <intent-filter>
+                <action android:name="cn.jiguang.user.service.action"/>
+            </intent-filter>
+        </service>
+        <service android:enabled="true" android:exported="false" android:name="cn.jpush.android.service.PushService">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTER"/>
+                <action android:name="cn.jpush.android.intent.REPORT"/>
+                <action android:name="cn.jpush.android.intent.PushService"/>
+                <action android:name="cn.jpush.android.intent.PUSH_TIME"/>
+            </intent-filter>
+        </service>
+        <receiver android:enabled="true" android:exported="false" android:name="com.mvw.nationalmedicalPhone.receiver.JReceiver">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTRATION"/>
+                <action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED"/>
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED"/>
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED"/>
+                <action android:name="cn.jpush.android.intent.CONNECTION"/>
+                <category android:name="com.mvw.nationalmedicalPhone"/>
+            </intent-filter>
+        </receiver>
+        <service android:enabled="true" android:exported="false" android:name="com.xiaomi.push.service.XMJobService" android:permission="android.permission.BIND_JOB_SERVICE" android:process=":pushcore"/>
+        <service android:enabled="true" android:name="com.xiaomi.push.service.XMPushService" android:process=":pushcore"/>
+        <service android:enabled="true" android:exported="true" android:name="com.xiaomi.mipush.sdk.PushMessageHandler"/>
+        <service android:enabled="true" android:name="com.xiaomi.mipush.sdk.MessageHandleService"/>
+        <receiver android:exported="true" android:name="com.xiaomi.push.service.receivers.NetworkStatusReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.xiaomi.push.service.receivers.PingReceiver" android:process=":pushcore">
+            <intent-filter>
+                <action android:name="com.xiaomi.push.PING_TIMER"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="cn.jpush.android.service.PluginXiaomiPlatformsReceiver">
+            <intent-filter>
+                <action android:name="com.xiaomi.mipush.action.MESSAGING_EVENT"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.mvw.nationalmedicalPhone.receiver.MiPushReceiver">
+            <intent-filter>
+                <action android:name="com.xiaomi.mipush.RECEIVE_MESSAGE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.xiaomi.mipush.MESSAGE_ARRIVED"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.xiaomi.mipush.ERROR"/>
+            </intent-filter>
+        </receiver>
+        <meta-data android:name="XIAOMI_APPKEY" android:value="MI-5781748748004"/>
+        <meta-data android:name="XIAOMI_APPID" android:value="MI-2882303761517487004"/>
+        <service android:exported="false" android:name="cn.jpush.android.service.PluginHuaweiPlatformsService">
+            <intent-filter>
+                <action android:name="com.huawei.push.action.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <activity android:exported="true" android:name="cn.jpush.android.service.JNotifyActivity" android:taskAffinity="jpush.custom" android:theme="@style/JPushTheme">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.JNotifyActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="com.mvw.nationalmedicalPhone"/>
+            </intent-filter>
+        </activity>
+        <meta-data android:name="com.huawei.hms.client.channel.androidMarket" android:value="false"/>
+        <meta-data android:name="push_kit_auto_init_enabled" android:value="true"/>
+        <meta-data android:name="sdkVersion" android:value="3000"/>
+        <meta-data android:name="sdk_version_vivo" android:value="484"/>
+        <service android:exported="true" android:name="com.vivo.push.sdk.service.CommandClientService"/>
+        <meta-data android:name="local_iv" android:value="MzMsMzQsMzUsMzYsMzcsMzgsMzksNDAsNDEsMzIsMzgsMzcsMzYsMzUsMzQsMzMsI0AzNCwzMiwzMywzNywzMywzNCwzMiwzMywzMywzMywzNCw0MSwzNSwzNSwzMiwzMiwjQDMzLDM0LDM1LDM2LDM3LDM4LDM5LDQwLDQxLDMyLDM4LDM3LDMzLDM1LDM0LDMzLCNAMzQsMzIsMzMsMzcsMzMsMzQsMzIsMzMsMzMsMzMsMzQsNDEsMzUsMzIsMzIsMzI"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation" android:exported="false" android:name="com.alipay.sdk.app.H5PayActivity" android:screenOrientation="behind"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation" android:exported="false" android:name="com.alipay.sdk.app.H5AuthActivity" android:screenOrientation="behind"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation" android:exported="true" android:launchMode="singleInstance" android:name="com.alipay.sdk.app.PayResultActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <service android:name="com.liulishuo.filedownloader.services.FileDownloadService$SharedMainProcessService"/>
+        <service android:name="com.liulishuo.filedownloader.services.FileDownloadService$SeparateProcessService" android:process=":filedownloader"/>
+        <activity android:configChanges="keyboard|keyboardHidden|locale|orientation|screenSize" android:label="@string/app_name" android:name="com.skytree.epubtest.HomeActivity" android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|uiMode" android:label="BookView" android:name="com.skytree.epubtest.BookViewActivity" android:theme="@android:style/Theme.Light.NoTitleBar"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|uiMode" android:label="Magazine" android:name="com.skytree.epubtest.MagazineActivity" android:theme="@android:style/Theme.NoTitleBar"/>
+        <service android:enabled="true" android:name="com.skytree.epubtest.LocalService"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|uiMode" android:label="@string/title_activity_setting" android:name="com.skytree.epubtest.SettingActivity"/>
+        <receiver android:directBootAware="true" android:name="com.huawei.hms.support.api.push.PushMsgReceiver" android:permission="com.mvw.nationalmedicalPhone.permission.PROCESS_PUSH_MSG">
+            <intent-filter>
+                <action android:name="com.huawei.intent.action.PUSH_DELAY_NOTIFY"/>
+                <action android:name="com.huawei.intent.action.PUSH"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="true" android:name="com.huawei.hms.support.api.push.PushReceiver" android:permission="com.mvw.nationalmedicalPhone.permission.PROCESS_PUSH_MSG">
+            <intent-filter>
+                <action android:name="com.huawei.android.push.intent.REGISTRATION"/>
+                <action android:name="com.huawei.android.push.intent.RECEIVE"/>
+            </intent-filter>
+        </receiver>
+        <service android:directBootAware="true" android:enabled="true" android:exported="true" android:name="com.huawei.hms.support.api.push.service.HmsMsgService" android:process=":pushservice">
+            <intent-filter>
+                <action android:name="com.huawei.push.msg.NOTIFY_MSG"/>
+                <action android:name="com.huawei.push.msg.PASSBY_MSG"/>
+            </intent-filter>
+        </service>
+        <provider android:authorities="com.mvw.nationalmedicalPhone.huawei.push.provider" android:exported="true" android:name="com.huawei.hms.support.api.push.PushProvider" android:permission="com.mvw.nationalmedicalPhone.permission.PUSH_PROVIDER" android:readPermission="com.mvw.nationalmedicalPhone.permission.PUSH_PROVIDER" android:writePermission="com.mvw.nationalmedicalPhone.permission.PUSH_WRITE_PROVIDER"/>
+        <meta-data android:name="com.huawei.hms.client.service.name:push" android:value="push:5.3.0.303"/>
+        <meta-data android:name="com.huawei.hms.min_api_level:push:push" android:value="1"/>
+        <provider android:authorities="com.mvw.nationalmedicalPhone.aaidinitprovider" android:exported="false" android:initOrder="500" android:name="com.huawei.hms.aaid.InitProvider"/>
+        <meta-data android:name="com.huawei.hms.client.service.name:opendevice" android:value="opendevice:5.1.1.306"/>
+        <meta-data android:name="com.huawei.hms.min_api_level:opendevice:push" android:value="1"/>
+        <meta-data android:name="com.huawei.hms.client.service.name:base" android:value="base:5.3.0.304"/>
+        <meta-data android:name="com.huawei.hms.min_api_level:base:hmscore" android:value="1"/>
+        <meta-data android:name="availableLoaded" android:value="yes"/>
+        <provider android:authorities="com.mvw.nationalmedicalPhone.hms.update.provider" android:exported="false" android:grantUriPermissions="true" android:name="com.huawei.hms.update.provider.UpdateProvider"/>
+        <provider android:authorities="com.mvw.nationalmedicalPhone.hms.device.validate.spoofprovider" android:exported="false" android:grantUriPermissions="false" android:name="com.huawei.hms.device.provider.CheckHmsProvider"/>
+        <activity android:configChanges="orientation|screenSize" android:exported="false" android:name="com.huawei.updatesdk.service.otaupdate.AppUpdateActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            <meta-data android:name="hwc-theme" android:value="androidhwext:style/Theme.Emui.Translucent.NoTitleBar"/>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.huawei.updatesdk.support.pm.PackageInstallerActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            <meta-data android:name="hwc-theme" android:value="androidhwext:style/Theme.Emui.Translucent"/>
+        </activity>
+        <provider android:authorities="com.mvw.nationalmedicalPhone.updateSdk.fileProvider" android:exported="false" android:grantUriPermissions="true" android:name="com.huawei.updatesdk.fileprovider.UpdateSdkFileProvider"/>
+        <activity android:configChanges="fontScale|layoutDirection|locale|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:excludeFromRecents="true" android:exported="false" android:hardwareAccelerated="true" android:name="com.huawei.hms.activity.BridgeActivity" android:screenOrientation="behind" android:theme="@style/Base_Translucent">
+            <meta-data android:name="hwc-theme" android:value="androidhwext:style/Theme.Emui.Translucent"/>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:exported="false" android:name="com.huawei.hms.activity.EnableServiceActivity"/>
+        <provider android:authorities="com.mvw.nationalmedicalPhone.AGCInitializeProvider" android:exported="false" android:name="com.huawei.agconnect.core.provider.AGConnectInitializeProvider"/>
+        <service android:exported="false" android:name="com.huawei.agconnect.core.ServiceDiscovery"/>
+        <meta-data android:name="com.huawei.hms.client.appid" android:value="appid=10575982"/>
+    </application>
+</manifest>

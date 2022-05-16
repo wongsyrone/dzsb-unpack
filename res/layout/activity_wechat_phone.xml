@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="right" android:id="@id/iv_close" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_marginTop="@dimen/dimens_10" android:layout_marginRight="@dimen/dimens_10" android:src="@mipmap/dialog_share_cancel" />
+    <TextView android:textSize="18.0sp" android:textColor="@color/black" android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimens_30" android:text="@string/bind_account_text" android:height="@dimen/dimens_40" />
+    <TextView android:textColor="@color/black" android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dimens_20" android:text="@string/bind_account_detail" android:height="@dimen/dimens_40" />
+    <LinearLayout android:orientation="vertical" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="10.0dip" android:layout_below="@id/rl_title">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@android:color/white" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/icon_user" />
+            <EditText android:textSize="14.0sp" android:textColorHint="@color/gray" android:id="@id/et_weChat_phone" android:background="@android:color/white" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/login_phone_email_input_hint" android:singleLine="true" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@android:color/white" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="15.0dip">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/icon_password" />
+            <EditText android:textSize="14.0sp" android:textColorHint="@color/gray" android:id="@id/et_weChat_pwd" android:background="@android:color/white" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/bind_pwd_hint" android:singleLine="true" android:inputType="textPassword" />
+        </LinearLayout>
+        <TextView android:textSize="17.0sp" android:textColor="@android:color/white" android:gravity="center" android:id="@id/tv_bind_login" android:background="@drawable/shape_login_button_bg" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:text="@string/bind_btn_name" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip">
+            <TextView android:textSize="14.0sp" android:textColor="@color/text_orange" android:id="@id/tv_bind_register" android:paddingTop="10.0dip" android:paddingRight="10.0dip" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bind_register_name" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/gray" android:id="@id/tv_bind_find_pwd" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/login_find_password" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

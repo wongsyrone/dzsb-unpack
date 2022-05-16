@@ -1,0 +1,202 @@
+.class public Lda/d;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lcom/bumptech/glide/load/Transformation;
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "Lcom/bumptech/glide/load/Transformation<",
+        "Landroid/graphics/Bitmap;",
+        ">;"
+    }
+.end annotation
+
+
+# instance fields
+.field public a:Lcom/bumptech/glide/load/engine/bitmap_recycle/BitmapPool;
+
+
+# direct methods
+.method public constructor <init>(Landroid/content/Context;)V
+    .locals 0
+
+    .line 1
+    invoke-static {p1}, Lcom/bumptech/glide/Glide;->get(Landroid/content/Context;)Lcom/bumptech/glide/Glide;
+
+    move-result-object p1
+
+    invoke-virtual {p1}, Lcom/bumptech/glide/Glide;->getBitmapPool()Lcom/bumptech/glide/load/engine/bitmap_recycle/BitmapPool;
+
+    move-result-object p1
+
+    invoke-direct {p0, p1}, Lda/d;-><init>(Lcom/bumptech/glide/load/engine/bitmap_recycle/BitmapPool;)V
+
+    return-void
+.end method
+
+.method public constructor <init>(Lcom/bumptech/glide/load/engine/bitmap_recycle/BitmapPool;)V
+    .locals 0
+
+    .line 2
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 3
+    iput-object p1, p0, Lda/d;->a:Lcom/bumptech/glide/load/engine/bitmap_recycle/BitmapPool;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public getId()Ljava/lang/String;
+    .locals 1
+
+    const-string v0, "CropCircleTransformation()"
+
+    return-object v0
+.end method
+
+.method public transform(Lcom/bumptech/glide/load/engine/Resource;II)Lcom/bumptech/glide/load/engine/Resource;
+    .locals 6
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lcom/bumptech/glide/load/engine/Resource<",
+            "Landroid/graphics/Bitmap;",
+            ">;II)",
+            "Lcom/bumptech/glide/load/engine/Resource<",
+            "Landroid/graphics/Bitmap;",
+            ">;"
+        }
+    .end annotation
+
+    .line 1
+    invoke-interface {p1}, Lcom/bumptech/glide/load/engine/Resource;->get()Ljava/lang/Object;
+
+    move-result-object p1
+
+    check-cast p1, Landroid/graphics/Bitmap;
+
+    .line 2
+    invoke-virtual {p1}, Landroid/graphics/Bitmap;->getWidth()I
+
+    move-result p2
+
+    invoke-virtual {p1}, Landroid/graphics/Bitmap;->getHeight()I
+
+    move-result p3
+
+    invoke-static {p2, p3}, Ljava/lang/Math;->min(II)I
+
+    move-result p2
+
+    .line 3
+    invoke-virtual {p1}, Landroid/graphics/Bitmap;->getWidth()I
+
+    move-result p3
+
+    sub-int/2addr p3, p2
+
+    div-int/lit8 p3, p3, 0x2
+
+    .line 4
+    invoke-virtual {p1}, Landroid/graphics/Bitmap;->getHeight()I
+
+    move-result v0
+
+    sub-int/2addr v0, p2
+
+    div-int/lit8 v0, v0, 0x2
+
+    .line 5
+    iget-object v1, p0, Lda/d;->a:Lcom/bumptech/glide/load/engine/bitmap_recycle/BitmapPool;
+
+    sget-object v2, Landroid/graphics/Bitmap$Config;->ARGB_8888:Landroid/graphics/Bitmap$Config;
+
+    invoke-interface {v1, p2, p2, v2}, Lcom/bumptech/glide/load/engine/bitmap_recycle/BitmapPool;->get(IILandroid/graphics/Bitmap$Config;)Landroid/graphics/Bitmap;
+
+    move-result-object v1
+
+    if-nez v1, :cond_0
+
+    .line 6
+    sget-object v1, Landroid/graphics/Bitmap$Config;->ARGB_8888:Landroid/graphics/Bitmap$Config;
+
+    invoke-static {p2, p2, v1}, Landroid/graphics/Bitmap;->createBitmap(IILandroid/graphics/Bitmap$Config;)Landroid/graphics/Bitmap;
+
+    move-result-object v1
+
+    .line 7
+    :cond_0
+    new-instance v2, Landroid/graphics/Canvas;
+
+    invoke-direct {v2, v1}, Landroid/graphics/Canvas;-><init>(Landroid/graphics/Bitmap;)V
+
+    .line 8
+    new-instance v3, Landroid/graphics/Paint;
+
+    invoke-direct {v3}, Landroid/graphics/Paint;-><init>()V
+
+    .line 9
+    new-instance v4, Landroid/graphics/BitmapShader;
+
+    sget-object v5, Landroid/graphics/Shader$TileMode;->CLAMP:Landroid/graphics/Shader$TileMode;
+
+    invoke-direct {v4, p1, v5, v5}, Landroid/graphics/BitmapShader;-><init>(Landroid/graphics/Bitmap;Landroid/graphics/Shader$TileMode;Landroid/graphics/Shader$TileMode;)V
+
+    if-nez p3, :cond_1
+
+    if-eqz v0, :cond_2
+
+    .line 10
+    :cond_1
+    new-instance p1, Landroid/graphics/Matrix;
+
+    invoke-direct {p1}, Landroid/graphics/Matrix;-><init>()V
+
+    neg-int p3, p3
+
+    int-to-float p3, p3
+
+    neg-int v0, v0
+
+    int-to-float v0, v0
+
+    .line 11
+    invoke-virtual {p1, p3, v0}, Landroid/graphics/Matrix;->setTranslate(FF)V
+
+    .line 12
+    invoke-virtual {v4, p1}, Landroid/graphics/BitmapShader;->setLocalMatrix(Landroid/graphics/Matrix;)V
+
+    .line 13
+    :cond_2
+    invoke-virtual {v3, v4}, Landroid/graphics/Paint;->setShader(Landroid/graphics/Shader;)Landroid/graphics/Shader;
+
+    const/4 p1, 0x1
+
+    .line 14
+    invoke-virtual {v3, p1}, Landroid/graphics/Paint;->setAntiAlias(Z)V
+
+    int-to-float p1, p2
+
+    const/high16 p2, 0x40000000    # 2.0f
+
+    div-float/2addr p1, p2
+
+    .line 15
+    invoke-virtual {v2, p1, p1, p1, v3}, Landroid/graphics/Canvas;->drawCircle(FFFLandroid/graphics/Paint;)V
+
+    .line 16
+    iget-object p1, p0, Lda/d;->a:Lcom/bumptech/glide/load/engine/bitmap_recycle/BitmapPool;
+
+    invoke-static {v1, p1}, Lcom/bumptech/glide/load/resource/bitmap/BitmapResource;->obtain(Landroid/graphics/Bitmap;Lcom/bumptech/glide/load/engine/bitmap_recycle/BitmapPool;)Lcom/bumptech/glide/load/resource/bitmap/BitmapResource;
+
+    move-result-object p1
+
+    return-object p1
+.end method

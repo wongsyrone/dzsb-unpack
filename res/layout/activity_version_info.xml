@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/rl_title" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="@dimen/dimens_48">
+        <ImageButton android:id="@id/ib_back" android:background="@null" android:layout_width="@dimen/dimens_20" android:layout_height="@dimen/dimens_20" android:layout_marginLeft="@dimen/dimens_10" android:src="@mipmap/icon_back" android:layout_centerVertical="true" />
+        <TextView android:textSize="18.0sp" android:textColor="@color/text_orange" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="版本信息" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <View android:background="@color/cl_line_gray1" android:layout_width="fill_parent" android:layout_height="@dimen/dimens_1px" />
+    <ImageView android:layout_gravity="center_horizontal" android:layout_width="@dimen/dimens_120" android:layout_height="@dimen/dimens_120" android:layout_marginTop="@dimen/dimens_30" android:src="@mipmap/ic_logo" />
+    <TextView android:textSize="16.0sp" android:textColor="@color/black" android:layout_gravity="center_horizontal" android:id="@id/version_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimens_20" android:text="3.4.9" />
+    <RelativeLayout android:id="@id/layout2" android:background="@drawable/edit_view_bg" android:paddingTop="@dimen/dimens_15" android:paddingBottom="@dimen/dimens_15" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimens_20" android:layout_marginTop="@dimen/dimens_20" android:layout_marginRight="@dimen/dimens_20">
+        <TextView android:textColor="@color/cl_gray1" android:id="@id/textview" android:layout_marginLeft="@dimen/dimens_15" android:text="用户服务协议" android:layout_centerVertical="true" style="@style/middle_text_gray" />
+        <ImageView android:layout_width="15.0dip" android:layout_height="15.0dip" android:layout_marginRight="@dimen/dimens_15" android:src="@mipmap/address_back" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/layout3" android:background="@drawable/top_no_line_bg" android:paddingTop="@dimen/dimens_15" android:paddingBottom="@dimen/dimens_15" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimens_20" android:layout_marginRight="@dimen/dimens_20">
+        <TextView android:textColor="@color/cl_gray1" android:layout_marginLeft="@dimen/dimens_15" android:text="隐私政策" android:layout_centerVertical="true" style="@style/middle_text_gray" />
+        <ImageView android:layout_width="15.0dip" android:layout_height="15.0dip" android:layout_marginRight="@dimen/dimens_15" android:src="@mipmap/address_back" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <View android:background="@color/umeng_divide" android:layout_width="fill_parent" android:layout_height="@dimen/dimens_1px" android:layout_marginLeft="@dimen/dimens_20" android:layout_marginRight="@dimen/dimens_20" />
+    <RelativeLayout android:id="@id/layout1" android:background="@drawable/top_no_line_bg" android:paddingTop="@dimen/dimens_15" android:paddingBottom="@dimen/dimens_15" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimens_20" android:layout_marginRight="@dimen/dimens_20">
+        <TextView android:textColor="@color/cl_gray1" android:layout_marginLeft="@dimen/dimens_15" android:text="官方网站" android:layout_centerVertical="true" style="@style/middle_text_gray" />
+        <TextView android:textColor="@color/cl_gray1" android:layout_marginLeft="@dimen/dimens_15" android:layout_marginRight="@dimen/dimens_15" android:text="http://www.imed.org.cn" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/middle_text_gray" />
+    </RelativeLayout>
+    <View android:background="@color/umeng_divide" android:layout_width="fill_parent" android:layout_height="@dimen/dimens_1px" android:layout_marginLeft="@dimen/dimens_20" android:layout_marginRight="@dimen/dimens_20" />
+</LinearLayout>

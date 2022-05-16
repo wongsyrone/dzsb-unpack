@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="18.0sp" android:layout_gravity="left" android:id="@id/tv_unbind_close" android:layout_width="wrap_content" android:layout_height="@dimen/dimens_30" android:layout_marginLeft="@dimen/dimens_20" android:layout_marginTop="@dimen/dimens_20" android:text="@string/unbind_close" />
+    <View android:layout_width="fill_parent" android:layout_height="@dimen/dimens_50" />
+    <ImageView android:layout_gravity="center_horizontal" android:id="@id/iv_weChat_icon" android:layout_width="@dimen/dimens_160" android:layout_height="@dimen/dimens_160" android:layout_marginTop="@dimen/dimens_30" />
+    <RelativeLayout android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimens_30">
+        <TextView android:textSize="18.0sp" android:textColor="@color/black" android:id="@id/tv1" android:layout_width="wrap_content" android:layout_height="@dimen/dimens_30" android:text="@string/unbind_weChat_num" />
+        <TextView android:textSize="18.0sp" android:textColor="@color/black" android:id="@id/tv_unbind_name" android:layout_width="wrap_content" android:layout_height="@dimen/dimens_30" android:text="英格兰公主" android:layout_toEndOf="@id/tv1" />
+    </RelativeLayout>
+    <TextView android:textColor="@color/gray" android:gravity="center_horizontal" android:id="@id/tv_weChat_state" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimens_10" android:text="@string/unbind_stated" />
+    <View android:layout_width="fill_parent" android:layout_height="@dimen/dimens_120" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:id="@id/btn_bind" android:layout_marginLeft="@dimen/dimens_50" android:layout_marginRight="@dimen/dimens_50" style="@style/tv_register_login" />
+    </LinearLayout>
+</LinearLayout>

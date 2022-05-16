@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/btn_disable" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aigestudio="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/rl_title" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="@dimen/dimens_48" android:layout_alignParentTop="true">
+        <ImageButton android:id="@id/ib_back_info" android:background="@null" android:visibility="visible" android:layout_width="@dimen/dimens_20" android:layout_height="@dimen/dimens_20" android:layout_marginLeft="@dimen/dimens_10" android:src="@mipmap/icon_back" android:layout_centerVertical="true" />
+        <TextView android:textSize="18.0sp" android:textColor="@color/text_orange" android:id="@id/txtName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="详细信息" android:layout_centerInParent="true" />
+        <Button android:textSize="16.0sp" android:textColor="@color/text_orange" android:id="@id/bt_sumbit" android:background="@color/transparent" android:padding="@dimen/dimens_5" android:layout_width="wrap_content" android:layout_height="40.0dip" android:layout_marginRight="@dimen/dimens_10" android:text="提交" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/rl_title">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <View android:background="@color/cl_line_gray2" android:layout_width="fill_parent" android:layout_height="@dimen/dimens_1px" />
+            <RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="@dimen/dimens_48">
+                <TextView android:textColor="@color/edittext_normal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimens_10" android:text="@string/user_info_more_occupation" android:layout_centerVertical="true" />
+                <EditText android:id="@id/edit_occupation" android:hint="请输入职务" style="@style/user_more_edit" />
+            </RelativeLayout>
+            <View android:background="@color/cl_line_gray2" android:layout_width="fill_parent" android:layout_height="@dimen/dimens_1px" />
+            <RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="@dimen/dimens_48">
+                <TextView android:textColor="@color/edittext_normal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimens_10" android:text="@string/user_info_more_graduationcollege" android:layout_centerVertical="true" />
+                <EditText android:id="@id/edit_graduationcollege" android:hint="请输入毕业院校" style="@style/user_more_edit" />
+            </RelativeLayout>
+            <View android:background="@color/cl_line_gray2" android:layout_width="fill_parent" android:layout_height="@dimen/dimens_1px" />
+            <RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="@dimen/dimens_48">
+                <TextView android:textColor="@color/edittext_normal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimens_10" android:text="@string/user_info_more_graduationYear" android:layout_centerVertical="true" />
+                <EditText android:id="@id/edit_graduationYear" android:hint="请输入毕业年份" android:maxLength="4" style="@style/user_more_edit" />
+            </RelativeLayout>
+            <View android:background="@color/cl_line_gray2" android:layout_width="fill_parent" android:layout_height="@dimen/dimens_1px" />
+            <RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="@dimen/dimens_48">
+                <TextView android:textColor="@color/edittext_normal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimens_10" android:text="@string/user_info_more_graduationmajor" android:layout_centerVertical="true" />
+                <EditText android:id="@id/edit_graduationmajor" android:hint="请输入专业" style="@style/user_more_edit" />
+            </RelativeLayout>
+            <View android:background="@color/cl_line_gray2" android:layout_width="fill_parent" android:layout_height="@dimen/dimens_1px" />
+            <RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="@dimen/dimens_48">
+                <TextView android:textColor="@color/edittext_normal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimens_10" android:text="@string/user_info_more_qq" android:layout_centerVertical="true" />
+                <EditText android:id="@id/edit_qq" android:hint="请输入QQ" style="@style/user_more_edit" />
+            </RelativeLayout>
+            <View android:background="@color/cl_line_gray2" android:layout_width="fill_parent" android:layout_height="@dimen/dimens_1px" />
+            <RelativeLayout android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/dimens_48">
+                <TextView android:textColor="@color/edittext_normal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimens_10" android:text="@string/user_info_more_wechat" android:layout_centerVertical="true" />
+                <EditText android:id="@id/edit_wechat" android:hint="请输入微信" style="@style/user_more_edit" />
+            </RelativeLayout>
+            <View android:background="@color/cl_line_gray2" android:layout_width="fill_parent" android:layout_height="@dimen/dimens_1px" />
+            <RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="@dimen/dimens_48">
+                <TextView android:textColor="@color/edittext_normal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimens_10" android:text="@string/user_info_more_address" android:layout_centerVertical="true" />
+                <EditText android:id="@id/edit_address" android:hint="请输入地址" style="@style/user_more_edit" />
+            </RelativeLayout>
+            <View android:background="@color/cl_line_gray2" android:layout_width="fill_parent" android:layout_height="@dimen/dimens_1px" />
+            <RelativeLayout android:id="@id/ethnicityCode_layout" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="@dimen/dimens_48">
+                <TextView android:textColor="@color/edittext_normal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimens_10" android:text="@string/user_info_more_ethnicityCode" android:layout_centerVertical="true" />
+                <TextView android:id="@id/text_ethnicityCode" style="@style/user_more_edit" />
+            </RelativeLayout>
+            <View android:background="@color/cl_line_gray2" android:layout_width="fill_parent" android:layout_height="@dimen/dimens_1px" />
+            <RelativeLayout android:id="@id/diplomaCode_layout" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="@dimen/dimens_48">
+                <TextView android:textColor="@color/edittext_normal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimens_10" android:text="@string/user_info_more_diplomaCode" android:layout_centerVertical="true" />
+                <TextView android:id="@id/text_diplomaCode" style="@style/user_more_edit" />
+            </RelativeLayout>
+            <View android:background="@color/cl_line_gray2" android:layout_width="fill_parent" android:layout_height="@dimen/dimens_1px" />
+            <RelativeLayout android:id="@id/degreeCodeType_layout" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="@dimen/dimens_48">
+                <TextView android:textColor="@color/edittext_normal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimens_10" android:text="@string/user_info_more_degreeCodeType" android:layout_centerVertical="true" />
+                <TextView android:id="@id/text_degreeCodeType" style="@style/user_more_edit" />
+            </RelativeLayout>
+            <View android:background="@color/cl_line_gray2" android:layout_width="fill_parent" android:layout_height="@dimen/dimens_1px" />
+            <RelativeLayout android:id="@id/degreeCode_layout" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="@dimen/dimens_48">
+                <TextView android:textColor="@color/edittext_normal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimens_10" android:text="@string/user_info_more_degreeCode" android:layout_centerVertical="true" />
+                <TextView android:id="@id/text_degreeCode" style="@style/user_more_edit" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:orientation="vertical" android:id="@id/whell_layout" android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/dimens_40" android:layout_marginLeft="@dimen/dimens_10" android:layout_marginRight="@dimen/dimens_10">
+            <Button android:id="@id/bt_cancel" android:background="@drawable/bg_setting_item" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/whell_btn_cancel" android:layout_centerVertical="true" />
+            <TextView android:textSize="18.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/whell_text" android:layout_centerInParent="true" />
+            <Button android:id="@id/bt_sumbit1" android:background="@drawable/bg_setting_item" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/whell_btn_sumbit" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <View android:background="@color/cl_line_gray2" android:layout_width="fill_parent" android:layout_height="@dimen/dimens_1px" />
+        <com.aigestudio.wheelpicker.WheelPicker android:id="@id/main_wheel_center" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" aigestudio:wheel_atmospheric="true" aigestudio:wheel_curved="true" aigestudio:wheel_cyclic="false" aigestudio:wheel_item_text_color="@color/whell_text_gray" aigestudio:wheel_item_text_size="20.0sp" aigestudio:wheel_selected_item_text_color="@color/black2" />
+    </LinearLayout>
+</RelativeLayout>

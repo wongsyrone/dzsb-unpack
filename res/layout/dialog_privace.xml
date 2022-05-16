@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@color/me_bg" android:padding="@dimen/dimens_20" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textColor="@color/viewfinder_frame" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/privacy_title" />
+    <TextView android:textColor="@color/result_view" android:id="@id/text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimens_20" android:lineSpacingExtra="@dimen/dimens_5" />
+    <Button android:textColor="@color/white" android:id="@id/button" android:background="@drawable/privacy_button_bg" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="@dimen/dimens_20" android:layout_marginTop="@dimen/dimens_30" android:layout_marginRight="@dimen/dimens_20" android:text="@string/privacy_btn_sure" />
+    <Button android:textColor="@color/black2" android:id="@id/button1" android:background="@color/me_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimens_10" android:text="@string/privacy_btn_cancel" />
+</LinearLayout>

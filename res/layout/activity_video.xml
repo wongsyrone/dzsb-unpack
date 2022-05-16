@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/llWVs" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.mvw.nationalmedicalPhone.view.MyVideoView android:id="@id/mVideoView" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </RelativeLayout>
+    <com.mvw.nationalmedicalPhone.video.SampleVideo android:id="@id/video_player" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true" />
+</LinearLayout>

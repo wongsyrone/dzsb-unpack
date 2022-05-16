@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_main_foot" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <RadioGroup android:orientation="horizontal" android:id="@id/rg_main_foot" android:background="#ffffffff" android:paddingTop="2.0dip" android:paddingBottom="2.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RadioButton android:id="@id/rb_main_foot_bookcity" android:checked="true" android:text="@string/main_foot_title_page" android:drawableTop="@drawable/selector_main_foot_page" style="@style/rb_main_foot" />
+            <RadioButton android:id="@id/rb_main_foot_bookcase" android:text="@string/main_foot_title_study" android:drawableTop="@drawable/selector_main_foot_bookcase" style="@style/rb_main_foot" />
+            <RadioButton android:id="@id/rb_main_foot_exam" android:text="@string/main_foot_title_exam" android:drawableTop="@drawable/selector_main_foot_exam" style="@style/rb_main_foot" />
+            <RadioButton android:id="@id/rb_main_foot_operation" android:text="@string/main_foot_title_operation" android:drawableTop="@drawable/selector_main_foot_course" style="@style/rb_main_foot" />
+            <RadioButton android:id="@id/rb_main_foot_database" android:text="@string/main_foot_title_me" android:drawableTop="@drawable/selector_main_foot_me" style="@style/rb_main_foot" />
+        </RadioGroup>
+    </LinearLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/ll_main_foot">
+        <com.mvw.nationalmedicalPhone.view.HomeViewPager android:id="@id/vp_home" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ImageView android:background="@mipmap/icon_main_line" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <SurfaceView android:id="@id/camera_surfaceview" android:layout_width="0.100000024dip" android:layout_height="0.100000024dip" />
+</RelativeLayout>

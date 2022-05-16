@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:padding="@dimen/dimens_10" android:layout_width="fill_parent" android:layout_height="90.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <TextView android:textSize="16.0sp" android:textColor="@color/black" android:gravity="center_vertical" android:id="@id/title" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginTop="@dimen/dimens_10" android:singleLine="true" android:layout_weight="2.0" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/recharge_red" android:gravity="center|right" android:id="@id/tv_pay_status" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginTop="@dimen/dimens_10" android:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <TextView android:textSize="14.0sp" android:textColor="@color/black2" android:gravity="center_vertical" android:id="@id/time" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginTop="@dimen/dimens_10" android:singleLine="true" android:layout_weight="2.0" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/black2" android:gravity="center|right" android:id="@id/pay" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginTop="@dimen/dimens_10" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

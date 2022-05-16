@@ -1,0 +1,31 @@
+{
+  "data": {
+    "items": [
+      {
+        "dictionaryCode": "2_DegreeType",
+        "dictionaryId": 485,
+        "dictionaryName": "医学专业学位",
+        "isDelete": 0,
+        "isRoot": 1,
+        "parentDictionaryCode": "DegreeType",
+        "remarks": "22"
+      },
+      {
+        "dictionaryCode": "1_DegreeType",
+        "dictionaryId": 484,
+        "dictionaryName": "医学科学学位",
+        "isDelete": 0,
+        "isRoot": 1,
+        "parentDictionaryCode": "DegreeType",
+        "remarks": "22"
+      }
+    ],
+    "maxPage": 1,
+    "pageNum": 1,
+    "pageSize": 1000,
+    "total": 2
+  },
+  "errorInfo": "",
+  "msg": "ok",
+  "result": true
+}

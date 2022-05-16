@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/btn_disable" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/rl_title" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="@dimen/dimens_48">
+        <ImageButton android:id="@id/ib_back" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimens_10" android:src="@mipmap/icon_back" android:layout_centerVertical="true" />
+        <TextView android:textSize="18.0sp" android:textColor="@color/text_orange" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="充值" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <View android:background="@color/cl_line_gray1" android:layout_width="fill_parent" android:layout_height="@dimen/dimens_1px" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:paddingBottom="@dimen/dimens_10" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:background="@color/white" android:padding="@dimen/dimens_15" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimens_10">
+                <TextView android:textSize="14.0sp" android:textColor="@color/black2" android:id="@id/pay_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="余额" />
+                <TextView android:textSize="14.0sp" android:textColor="@color/black2" android:id="@id/pay_give" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimens_3.5" android:text="赠点" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:background="@color/white" android:paddingTop="@dimen/dimens_15" android:paddingBottom="@dimen/dimens_15" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimens_10">
+                <TextView android:textSize="14.0sp" android:textColor="@color/cl_line_gray1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimens_15" android:text="请选择充值金额：（1元=10阅点）" />
+                <com.mvw.nationalmedicalPhone.view.MyGridView android:id="@id/pay_grid" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/dimens_5" android:layout_marginTop="@dimen/dimens_8" android:layout_marginRight="@dimen/dimens_5" android:listSelector="@null" android:horizontalSpacing="@dimen/dimens_8" android:verticalSpacing="@dimen/dimens_8" android:numColumns="3" />
+            </LinearLayout>
+            <TextView android:background="@color/white" android:padding="@dimen/dimens_15" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/dimens_10" android:text="@string/pay_tips" />
+            <RelativeLayout android:id="@id/alipay" android:background="@drawable/bg_setting_item" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_marginTop="@dimen/dimens_10">
+                <ImageView android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginLeft="@dimen/dimens_10" android:src="@mipmap/default_notice_icon" android:layout_centerVertical="true" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimens_40" android:text="支付宝" android:layout_centerVertical="true" />
+                <ImageView android:id="@id/alipay_box" android:background="@mipmap/kinda_checkbox_selected" android:layout_width="18.0dip" android:layout_height="18.0dip" android:layout_marginRight="@dimen/dimens_10" android:checked="true" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <View android:background="@color/cl_line_gray1" android:layout_width="fill_parent" android:layout_height="@dimen/dimens_1px" />
+            <RelativeLayout android:id="@id/wechat" android:background="@drawable/bg_setting_item" android:layout_width="fill_parent" android:layout_height="48.0dip">
+                <ImageView android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginLeft="@dimen/dimens_10" android:src="@mipmap/kinda_wechat_pay" android:layout_centerVertical="true" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimens_40" android:text="微信" android:layout_centerVertical="true" />
+                <ImageView android:id="@id/wechat_box" android:background="@mipmap/kinda_checkbox_unselected" android:layout_width="18.0dip" android:layout_height="18.0dip" android:layout_marginRight="@dimen/dimens_10" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

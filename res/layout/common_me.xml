@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aigestudio="http://schemas.android.com/apk/res-auto">
+    <View android:background="@color/cl_line_gray2" android:layout_width="fill_parent" android:layout_height="@dimen/dimens_1px" />
+    <RelativeLayout android:id="@id/me_bookstore" android:background="@drawable/bg_setting_item" android:layout_width="fill_parent" android:layout_height="@dimen/dimens_45">
+        <ImageView android:id="@id/imageview" android:layout_width="@dimen/dimens_23" android:layout_height="@dimen/dimens_23" android:layout_marginLeft="@dimen/set_margin_left" android:src="@mipmap/shubao" android:layout_centerVertical="true" />
+        <TextView android:textColor="@color/black" android:layout_marginLeft="@dimen/set_margin_left" android:text="@string/me_bookstore" android:layout_toRightOf="@id/imageview" android:layout_centerVertical="true" android:layout_marginStart="13.0dip" style="@style/middle_text_gray" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dimens_15" android:src="@mipmap/jinru" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <View android:background="@color/cl_line_gray2" android:layout_width="fill_parent" android:layout_height="@dimen/dimens_1px" />
+    <RelativeLayout android:id="@id/me_read_point" android:background="@drawable/bg_setting_item" android:layout_width="fill_parent" android:layout_height="@dimen/dimens_45">
+        <ImageView android:id="@id/ivRead" android:layout_width="@dimen/dimens_20" android:layout_height="@dimen/dimens_20" android:layout_marginLeft="@dimen/set_margin_left" android:src="@mipmap/yuedian" android:layout_centerVertical="true" />
+        <TextView android:textColor="@color/black" android:layout_marginLeft="@dimen/set_margin_left" android:text="@string/me_read_point" android:layout_toRightOf="@id/ivRead" android:layout_centerVertical="true" style="@style/middle_text_gray" />
+        <TextView android:id="@id/textview2" android:layout_marginLeft="@dimen/set_margin_left" android:text="立即充值" android:layout_toLeftOf="@id/iv_arrow" android:layout_centerVertical="true" style="@style/middle_text_gray" />
+        <ImageView android:id="@id/iv_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dimens_15" android:src="@mipmap/jinru" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <View android:background="@color/cl_line_gray2" android:layout_width="fill_parent" android:layout_height="@dimen/dimens_1px" />
+    <RelativeLayout android:id="@id/me_custom_bg" android:background="@drawable/bg_setting_item" android:layout_width="fill_parent" android:layout_height="@dimen/dimens_45">
+        <ImageView android:id="@id/iv_custom_pg" android:layout_width="@dimen/dimens_20" android:layout_height="@dimen/dimens_20" android:layout_marginLeft="@dimen/set_margin_left" android:src="@mipmap/tongguanbao" android:layout_centerVertical="true" />
+        <TextView android:textColor="@color/black" android:layout_marginLeft="@dimen/set_margin_left" android:text="@string/me_customs_bag" android:layout_toRightOf="@id/iv_custom_pg" android:layout_centerVertical="true" style="@style/middle_text_gray" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dimens_15" android:src="@mipmap/jinru" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <View android:background="@color/cl_line_gray2" android:layout_width="fill_parent" android:layout_height="@dimen/dimens_1px" />
+    <RelativeLayout android:id="@id/me_video" android:background="@drawable/bg_setting_item" android:layout_width="fill_parent" android:layout_height="@dimen/dimens_45">
+        <ImageView android:id="@id/iv_video" android:layout_width="@dimen/dimens_20" android:layout_height="@dimen/dimens_20" android:layout_marginLeft="@dimen/set_margin_left" android:src="@mipmap/shipin" android:layout_centerVertical="true" />
+        <TextView android:textColor="@color/black" android:layout_marginLeft="@dimen/set_margin_left" android:text="@string/me_video" android:layout_toRightOf="@id/iv_video" android:layout_centerVertical="true" style="@style/middle_text_gray" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dimens_15" android:src="@mipmap/jinru" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <View android:background="@color/cl_line_gray2" android:layout_width="fill_parent" android:layout_height="@dimen/dimens_1px" />
+    <RelativeLayout android:id="@id/me_paper" android:background="@drawable/bg_setting_item" android:layout_width="fill_parent" android:layout_height="@dimen/dimens_45">
+        <ImageView android:id="@id/iv_paper" android:layout_width="@dimen/dimens_20" android:layout_height="@dimen/dimens_20" android:layout_marginLeft="@dimen/set_margin_left" android:src="@mipmap/kaoshi" android:layout_centerVertical="true" />
+        <TextView android:textColor="@color/black" android:layout_marginLeft="@dimen/set_margin_left" android:text="@string/me_test_pager" android:layout_toRightOf="@id/iv_paper" android:layout_centerVertical="true" style="@style/middle_text_gray" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dimens_15" android:src="@mipmap/jinru" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <View android:background="@color/cl_line_gray2" android:layout_width="fill_parent" android:layout_height="@dimen/dimens_1px" />
+    <RelativeLayout android:id="@id/me_recharge" android:background="@drawable/bg_setting_item" android:layout_width="fill_parent" android:layout_height="@dimen/dimens_45">
+        <ImageView android:id="@id/iv_recharge" android:layout_width="@dimen/dimens_20" android:layout_height="@dimen/dimens_20" android:layout_marginLeft="@dimen/set_margin_left" android:src="@mipmap/chongzhi" android:layout_centerVertical="true" />
+        <TextView android:textColor="@color/black" android:layout_marginLeft="@dimen/set_margin_left" android:text="@string/me_recharge_consumption_record" android:layout_toRightOf="@id/iv_recharge" android:layout_centerVertical="true" style="@style/middle_text_gray" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dimens_15" android:src="@mipmap/jinru" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <View android:background="@color/cl_line_gray2" android:layout_width="fill_parent" android:layout_height="@dimen/dimens_1px" />
+    <RelativeLayout android:id="@id/me_mechanism" android:background="@drawable/bg_setting_item" android:layout_width="fill_parent" android:layout_height="@dimen/dimens_45">
+        <ImageView android:id="@id/iv_mechanism" android:layout_width="@dimen/dimens_20" android:layout_height="@dimen/dimens_20" android:layout_marginLeft="@dimen/set_margin_left" android:src="@mipmap/me_mechanism" android:layout_centerVertical="true" />
+        <TextView android:textColor="@color/black" android:id="@id/tv_mechanism" android:layout_marginLeft="@dimen/set_margin_left" android:text="@string/user_info_mechanism" android:layout_toRightOf="@id/iv_mechanism" android:layout_centerVertical="true" style="@style/middle_text_gray" />
+        <TextView android:textColor="@color/cl_line_gray1" android:gravity="right" android:id="@id/user_mechanism_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:layout_toLeftOf="@id/iv_arrow1" android:layout_toRightOf="@id/tv_mechanism" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/iv_arrow1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dimens_15" android:src="@mipmap/jinru" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <View android:background="@color/cl_line_gray2" android:layout_width="fill_parent" android:layout_height="@dimen/dimens_1px" />
+    <RelativeLayout android:id="@id/me_new" android:background="@drawable/bg_setting_item" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/dimens_45">
+        <ImageView android:id="@id/iv_info" android:layout_width="@dimen/dimens_20" android:layout_height="@dimen/dimens_20" android:layout_marginLeft="@dimen/set_margin_left" android:src="@mipmap/xinban" android:layout_centerVertical="true" />
+        <TextView android:textColor="@color/black" android:layout_marginLeft="@dimen/set_margin_left" android:text="@string/me_new_information" android:layout_toRightOf="@id/iv_info" android:layout_centerVertical="true" style="@style/middle_text_gray" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dimens_15" android:src="@mipmap/jinru" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <View android:background="@color/cl_line_gray2" android:layout_width="fill_parent" android:layout_height="@dimen/dimens_1px" />
+    <RelativeLayout android:id="@id/me_clear" android:background="@drawable/bg_setting_item" android:layout_width="fill_parent" android:layout_height="@dimen/dimens_45">
+        <ImageView android:id="@id/iv_clear" android:layout_width="@dimen/dimens_20" android:layout_height="@dimen/dimens_20" android:layout_marginLeft="@dimen/set_margin_left" android:src="@mipmap/me_clear" android:layout_centerVertical="true" />
+        <TextView android:textColor="@color/black" android:layout_marginLeft="@dimen/set_margin_left" android:text="@string/me_clear" android:layout_toRightOf="@id/iv_clear" android:layout_centerVertical="true" style="@style/middle_text_gray" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dimens_15" android:src="@mipmap/jinru" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <View android:background="@color/cl_line_gray2" android:layout_width="fill_parent" android:layout_height="@dimen/dimens_1px" />
+    <RelativeLayout android:id="@id/me_service" android:background="@drawable/bg_setting_item" android:layout_width="fill_parent" android:layout_height="@dimen/dimens_45">
+        <ImageView android:id="@id/iv_service" android:layout_width="@dimen/dimens_20" android:layout_height="@dimen/dimens_20" android:layout_marginLeft="@dimen/set_margin_left" android:src="@mipmap/me_protocol" android:layout_centerVertical="true" />
+        <TextView android:textColor="@color/black" android:layout_marginLeft="@dimen/set_margin_left" android:text="@string/me_service" android:layout_toRightOf="@id/iv_service" android:layout_centerVertical="true" style="@style/middle_text_gray" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dimens_15" android:src="@mipmap/jinru" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <View android:background="@color/cl_line_gray2" android:layout_width="fill_parent" android:layout_height="@dimen/dimens_1px" />
+    <RelativeLayout android:id="@id/me_privacy" android:background="@drawable/bg_setting_item" android:layout_width="fill_parent" android:layout_height="@dimen/dimens_45">
+        <ImageView android:id="@id/iv_privacy" android:layout_width="@dimen/dimens_20" android:layout_height="@dimen/dimens_20" android:layout_marginLeft="@dimen/set_margin_left" android:src="@mipmap/me_privacy" android:layout_centerVertical="true" />
+        <TextView android:textColor="@color/black" android:layout_marginLeft="@dimen/set_margin_left" android:text="@string/me_privacy" android:layout_toRightOf="@id/iv_privacy" android:layout_centerVertical="true" style="@style/middle_text_gray" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dimens_15" android:src="@mipmap/jinru" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <View android:background="@color/cl_line_gray2" android:layout_width="fill_parent" android:layout_height="@dimen/dimens_1px" />
+</LinearLayout>

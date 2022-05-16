@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aigestudio="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/whell_layout" android:background="@color/white" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/dimens_40" android:layout_marginLeft="@dimen/dimens_10" android:layout_marginRight="@dimen/dimens_10">
+            <Button android:id="@id/bt_mechanism_cancel" android:background="@drawable/bg_setting_item" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/whell_btn_cancel" android:layout_centerVertical="true" />
+            <TextView android:textSize="18.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/whell_text" android:layout_centerInParent="true" />
+            <Button android:id="@id/bt_mechanism_submit" android:background="@drawable/bg_setting_item" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/whell_btn_sumbit" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <View android:background="@color/cl_line_gray2" android:layout_width="fill_parent" android:layout_height="@dimen/dimens_1px" />
+        <com.aigestudio.wheelpicker.WheelPicker android:id="@id/main_wheel_center" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" aigestudio:wheel_atmospheric="true" aigestudio:wheel_curved="true" aigestudio:wheel_cyclic="false" aigestudio:wheel_item_text_color="@color/whell_text_gray" aigestudio:wheel_item_text_size="20.0sp" aigestudio:wheel_selected_item_text_color="@color/black2" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <View android:layout_gravity="center" android:id="@id/vHint" android:background="@color/pure_black" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+        <RelativeLayout android:id="@id/mControllView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true">
+            <ImageView android:id="@id/ivBigPlay" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/start_big" android:layout_centerInParent="true" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/llControll" android:background="@drawable/video_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+                <ImageView android:id="@id/ivPlay" android:paddingLeft="15.0dip" android:paddingTop="5.0dip" android:paddingRight="10.0dip" android:paddingBottom="5.0dip" android:layout_width="40.0dip" android:layout_height="fill_parent" android:src="@mipmap/start_small" android:scaleType="centerInside" />
+                <ImageView android:background="@mipmap/video_vertical_line" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="5.0dip" />
+                <TextView android:textSize="12.0sp" android:textColor="@color/white" android:id="@id/tvProgress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="00:00" />
+                <SeekBar android:id="@id/seekBar" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxHeight="10.0dip" android:progress="50" android:progressDrawable="@drawable/seekbar_video_style" android:minHeight="10.0dip" android:thumb="@drawable/video_seekbar_thumb_point" android:layout_weight="1.0" />
+                <TextView android:textSize="12.0sp" android:textColor="@color/white" android:id="@id/tvDuration" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="00:00" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

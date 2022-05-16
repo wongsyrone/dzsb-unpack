@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/rl_title" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="@dimen/dimens_48">
+        <ImageButton android:id="@id/ib_back" android:background="@null" android:layout_width="@dimen/dimens_20" android:layout_height="@dimen/dimens_20" android:layout_marginLeft="@dimen/dimens_10" android:src="@mipmap/icon_back" android:layout_centerVertical="true" />
+        <TextView android:textSize="18.0sp" android:textColor="@color/text_orange" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="意见反馈" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <View android:background="@color/cl_line_gray1" android:layout_width="fill_parent" android:layout_height="@dimen/dimens_1px" />
+    <EditText android:textSize="14.0sp" android:textColorHint="@color/cl_line_gray1" android:id="@id/feed_title" android:background="@drawable/edit_view_bg" android:padding="@dimen/dimens_15" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimens_15" android:layout_marginTop="@dimen/dimens_10" android:layout_marginRight="@dimen/dimens_15" android:hint="请输入手机号" android:maxLength="20" />
+    <EditText android:textSize="14.0sp" android:textColorHint="@color/cl_line_gray1" android:id="@id/feed_content" android:background="@drawable/edit_view_bg" android:paddingLeft="@dimen/dimens_15" android:paddingTop="@dimen/dimens_10" android:paddingBottom="200.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimens_15" android:layout_marginTop="@dimen/dimens_15" android:layout_marginRight="@dimen/dimens_15" android:hint="请输入反馈内容" />
+    <TextView android:textSize="16.0sp" android:textColor="@android:color/white" android:gravity="center" android:id="@id/tv_change" android:background="@drawable/shape_login_button_bg" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="15.0dip" android:text="@string/change_pwd_sumbit" />
+</LinearLayout>

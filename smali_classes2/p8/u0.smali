@@ -1,0 +1,96 @@
+.class public Lp8/u0;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Ljava/lang/Runnable;
+
+
+# instance fields
+.field public final synthetic a:Lp8/t0;
+
+
+# direct methods
+.method public constructor <init>(Lp8/t0;)V
+    .locals 0
+
+    iput-object p1, p0, Lp8/u0;->a:Lp8/t0;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+.method public static synthetic a(Lp8/u0;)Lp8/t0;
+    .locals 0
+
+    iget-object p0, p0, Lp8/u0;->a:Lp8/t0;
+
+    return-object p0
+.end method
+
+
+# virtual methods
+.method public run()V
+    .locals 4
+
+    iget-object v0, p0, Lp8/u0;->a:Lp8/t0;
+
+    invoke-static {v0}, Lp8/t0;->a(Lp8/t0;)Lcom/skytree/epub/ae;
+
+    move-result-object v0
+
+    iget-object v1, p0, Lp8/u0;->a:Lp8/t0;
+
+    invoke-static {v1}, Lp8/t0;->a(Lp8/t0;)Lcom/skytree/epub/ae;
+
+    move-result-object v1
+
+    iget-object v1, v1, Lcom/skytree/epub/ae;->e:Lcom/skytree/epub/s;
+
+    invoke-virtual {v1}, Landroid/opengl/GLSurfaceView;->getWidth()I
+
+    move-result v1
+
+    add-int/lit16 v1, v1, 0x190
+
+    iget-object v2, p0, Lp8/u0;->a:Lp8/t0;
+
+    invoke-static {v2}, Lp8/t0;->a(Lp8/t0;)Lcom/skytree/epub/ae;
+
+    move-result-object v2
+
+    iget-object v2, v2, Lcom/skytree/epub/ae;->e:Lcom/skytree/epub/s;
+
+    invoke-virtual {v2}, Landroid/opengl/GLSurfaceView;->getHeight()I
+
+    move-result v2
+
+    div-int/lit8 v2, v2, 0x3
+
+    invoke-static {v0, v1, v2}, Lcom/skytree/epub/ae;->b0(Lcom/skytree/epub/ae;II)V
+
+    iget-object v0, p0, Lp8/u0;->a:Lp8/t0;
+
+    invoke-static {v0}, Lp8/t0;->a(Lp8/t0;)Lcom/skytree/epub/ae;
+
+    move-result-object v0
+
+    iget-object v0, v0, Lcom/skytree/epub/ae;->e:Lcom/skytree/epub/s;
+
+    invoke-virtual {v0}, Landroid/opengl/GLSurfaceView;->invalidate()V
+
+    new-instance v0, Landroid/os/Handler;
+
+    invoke-direct {v0}, Landroid/os/Handler;-><init>()V
+
+    new-instance v1, Lp8/v0;
+
+    invoke-direct {v1, p0}, Lp8/v0;-><init>(Lp8/u0;)V
+
+    const-wide/16 v2, 0x6e
+
+    invoke-virtual {v0, v1, v2, v3}, Landroid/os/Handler;->postDelayed(Ljava/lang/Runnable;J)Z
+
+    return-void
+.end method

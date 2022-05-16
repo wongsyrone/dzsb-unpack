@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:paddingBottom="@dimen/dimens_20" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/dimens_40" android:layout_marginLeft="@dimen/dimens_10" android:layout_marginRight="@dimen/dimens_10">
+        <Button android:id="@id/bt_cancel" android:background="@drawable/bg_setting_item" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/whell_btn_cancel" android:layout_centerVertical="true" />
+        <TextView android:textSize="18.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/user_info_change" android:layout_centerInParent="true" />
+        <Button android:id="@id/bt_sumbit" android:background="@drawable/bg_setting_item" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/whell_btn_sumbit" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <View android:background="@color/cl_line_gray2" android:layout_width="fill_parent" android:layout_height="@dimen/dimens_1px" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimens_10" android:layout_marginTop="@dimen/dimens_10" android:layout_marginRight="@dimen/dimens_10">
+        <TextView android:textSize="14.0sp" android:textColor="@color/cl_line_gray1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="用户名:" />
+        <EditText android:textSize="14.0sp" android:textColorHint="@color/cl_line_gray1" android:id="@id/user_edit_title" android:background="@drawable/edit_view_bg" android:padding="@dimen/dimens_10" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimens_10" android:hint="请输入用户名" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimens_10" android:layout_marginTop="@dimen/dimens_10" android:layout_marginRight="@dimen/dimens_10">
+        <TextView android:textSize="14.0sp" android:textColor="@color/cl_line_gray1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="　性别:" />
+        <RadioGroup android:orientation="horizontal" android:id="@id/radio" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimens_10">
+            <RadioButton android:textColor="@color/black2" android:gravity="center" android:id="@id/radio_man" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@null" android:text="男" android:drawableLeft="@drawable/selector_west_east" />
+            <RadioButton android:textColor="@color/black2" android:gravity="center" android:id="@id/radio_women" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimens_40" android:button="@null" android:text="女" android:drawableLeft="@drawable/selector_west_east" />
+        </RadioGroup>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/layout1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimens_10" android:layout_marginTop="@dimen/dimens_10" android:layout_marginRight="@dimen/dimens_10">
+        <TextView android:textSize="14.0sp" android:textColor="@color/cl_line_gray1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="证件号:" />
+        <EditText android:textSize="14.0sp" android:textColorHint="@color/cl_line_gray1" android:id="@id/user_edit_card" android:background="@drawable/edit_view_bg" android:padding="@dimen/dimens_10" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimens_10" android:hint="请输入证件号" />
+    </LinearLayout>
+</LinearLayout>

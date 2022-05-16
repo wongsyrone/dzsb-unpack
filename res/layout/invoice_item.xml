@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/bg_setting_item" android:paddingLeft="@dimen/dimens_10" android:paddingTop="@dimen/dimens_10" android:paddingRight="@dimen/dimens_10" android:paddingBottom="@dimen/dimens_10" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBox android:id="@id/checkbox" android:background="@drawable/selector_invoice" android:layout_width="@dimen/dimens_20" android:layout_height="@dimen/dimens_20" android:button="@null" android:layout_centerVertical="true" />
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimens_10" android:layout_toRightOf="@id/checkbox">
+        <TextView android:textSize="16.0sp" android:textColor="@color/black" android:ellipsize="end" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:maxEms="12" />
+        <TextView android:textSize="12.0sp" android:textColor="@android:color/darker_gray" android:id="@id/time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimens_5" />
+    </LinearLayout>
+    <LinearLayout android:gravity="end" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true">
+        <TextView android:textSize="16.0sp" android:textColor="@color/black" android:id="@id/pay" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1" />
+        <TextView android:textSize="12.0sp" android:textColor="@android:color/darker_gray" android:id="@id/value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimens_5" android:text="2020/10/26" />
+    </LinearLayout>
+</RelativeLayout>

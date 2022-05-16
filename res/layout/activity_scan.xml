@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/bar" android:background="@color/viewfinder_mask" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_alignParentTop="true">
+        <ImageButton android:id="@id/capture_imageview_back" android:background="@drawable/selector_capture_back" android:padding="5.0dip" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_centerVertical="true" />
+        <TextView android:textSize="20.0sp" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="扫一扫" android:layout_centerInParent="true" />
+        <TextView android:textSize="18.0sp" android:textColor="@color/white" android:id="@id/photo" android:padding="@dimen/dimens_3.5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="相册" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/dimens_15" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <cn.bingoogolapple.qrcode.zxing.ZXingView android:id="@id/zxingview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/bar" app:qrcv_animTime="1000" app:qrcv_borderColor="@android:color/holo_green_light" app:qrcv_borderSize="1.0dip" app:qrcv_cornerColor="@color/green" app:qrcv_cornerLength="20.0dip" app:qrcv_cornerSize="3.0dip" app:qrcv_isAutoZoom="true" app:qrcv_isShowTipTextAsSingleLine="false" app:qrcv_isTipTextBelowRect="true" app:qrcv_maskColor="#33ffffff" app:qrcv_qrCodeTipText="将二维码放入框内，即可自动扫描" app:qrcv_rectWidth="200.0dip" app:qrcv_scanLineColor="@color/green" app:qrcv_scanLineSize="1.0dip" app:qrcv_tipTextColor="@color/green" app:qrcv_tipTextSize="12.0sp" app:qrcv_topOffset="160.0dip" />
+</RelativeLayout>

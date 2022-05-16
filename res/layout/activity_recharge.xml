@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/rl_title" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="@dimen/dimens_48">
+        <ImageButton android:id="@id/ib_back" android:background="@null" android:layout_width="@dimen/dimens_20" android:layout_height="@dimen/dimens_20" android:layout_marginLeft="@dimen/dimens_10" android:src="@mipmap/icon_back" android:layout_centerVertical="true" />
+        <TextView android:textSize="18.0sp" android:textColor="@color/text_orange" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="资金记录" android:layout_centerInParent="true" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/text_orange" android:id="@id/invoice_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dimens_10" android:text="申请开票" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <View android:background="@color/cl_line_gray1" android:layout_width="fill_parent" android:layout_height="@dimen/dimens_1px" />
+    <ListView android:id="@id/listview" android:divider="@color/list_divider" android:dividerHeight="@dimen/dimens_1px" style="@style/common_listview" />
+    <ImageView android:layout_gravity="center" android:id="@id/emputy" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimens_50" android:src="@mipmap/nodataview" />
+    <View android:id="@id/view" android:background="@color/list_divider" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/dimens_1px" />
+</LinearLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/me_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:paddingBottom="@dimen/dimens_30" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <RelativeLayout android:id="@id/user_layout" android:layout_width="fill_parent" android:layout_height="210.0dip">
+                <ImageView android:id="@id/user_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@mipmap/us_bg" android:scaleType="fitXY" />
+                <ImageView android:id="@id/icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimens_16" android:layout_marginTop="@dimen/dimens_30" android:src="@mipmap/my_icon" />
+                <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimens_10" android:layout_marginTop="@dimen/dimens_50" android:layout_toRightOf="@id/icon">
+                    <TextView android:textSize="18.0sp" android:textColor="@color/black" android:id="@id/txtName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimens_4" android:text="游客" />
+                    <TextView android:textSize="14.0sp" android:textColor="@color/gray" android:id="@id/txtPhone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimens_5" />
+                </LinearLayout>
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimens_72" android:layout_marginRight="@dimen/dimens_16" android:src="@mipmap/jinru" android:layout_alignParentRight="true" />
+                <ImageView android:id="@id/setting_icon" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_marginTop="@dimen/dimens_16" android:layout_marginRight="@dimen/dimens_16" android:src="@mipmap/shezhi" android:layout_alignParentRight="true" />
+                <LinearLayout android:orientation="horizontal" android:id="@id/rl_test" android:background="@drawable/me_corner_normal" android:layout_width="fill_parent" android:layout_height="@dimen/dimens_83" android:layout_marginTop="@dimen/dimens_23" android:layout_below="@id/icon" android:layout_marginStart="@dimen/dimens_8" android:layout_marginEnd="@dimen/dimens_8">
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_me_wrong_question" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                        <ImageView android:layout_width="@dimen/dimens_16" android:layout_height="@dimen/dimens_16" android:src="@mipmap/me_wrong_question" />
+                        <TextView android:textColor="@color/black" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimens_8" android:text="@string/me_wrong_question" />
+                    </LinearLayout>
+                    <View android:layout_gravity="center_vertical" android:background="@color/cl_line_gray2" android:layout_width="@dimen/dimens_1px" android:layout_height="@dimen/dimens_50" />
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_me_collect" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                        <ImageView android:layout_width="@dimen/dimens_16" android:layout_height="@dimen/dimens_16" android:src="@mipmap/me_collect" />
+                        <TextView android:textColor="@color/black" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimens_8" android:text="@string/me_collect" />
+                    </LinearLayout>
+                    <View android:layout_gravity="center_vertical" android:background="@color/cl_line_gray2" android:layout_width="@dimen/dimens_1px" android:layout_height="@dimen/dimens_50" />
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_me_error_correction" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                        <ImageView android:layout_width="@dimen/dimens_16" android:layout_height="@dimen/dimens_16" android:src="@mipmap/me_error_correction" />
+                        <TextView android:textColor="@color/black" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimens_8" android:text="@string/me_error_correction" />
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/content" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <include android:id="@id/rl_no_work" layout="@layout/common_me" />
+            </LinearLayout>
+            <TextView android:textSize="16.0sp" android:textColor="@color/black2" android:gravity="center" android:id="@id/login_out" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="@dimen/dimens_48" android:layout_marginTop="@dimen/dimens_15" android:text="@string/me_login_out" />
+            <TextView android:textColor="@color/cl_line_gray4" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimens_20" android:text="@string/me_service_number" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/activity_detail_player" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v4.widget.NestedScrollView android:id="@id/post_detail_nested_scroll" android:layout_width="fill_parent" android:layout_height="wrap_content" android:fillViewport="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <View android:layout_width="fill_parent" android:layout_height="@dimen/dimens_200" />
+            <TextView android:textSize="16.0sp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="123456789//**" />
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+    <com.shuyu.gsyvideoplayer.video.ListGSYVideoPlayer android:id="@id/detail_player" android:layout_width="fill_parent" android:layout_height="@dimen/dimens_200" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/detail_player">
+        <Button android:id="@id/next" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:text="下一级" />
+    </RelativeLayout>
+</RelativeLayout>

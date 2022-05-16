@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:background="@drawable/invoice_top_bg" android:layout_width="fill_parent" android:layout_height="25.0dip" />
+    <LinearLayout android:orientation="vertical" android:background="@drawable/invoice_content_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimens_25" android:layout_marginTop="-12.5dip" android:layout_marginRight="@dimen/dimens_25">
+        <TextView android:textSize="16.0sp" android:textColor="@color/black" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimens_20" android:text="确认开票信息" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimens_25">
+            <TextView android:textSize="14.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimens_10" android:text="发票金额:" />
+            <TextView android:textSize="14.0sp" android:id="@id/text01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimens_10" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimens_10">
+            <TextView android:textSize="14.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimens_10" android:text="发票内容:" />
+            <TextView android:textSize="14.0sp" android:id="@id/text02" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimens_10" android:text="医视数字教材系统V1.0" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimens_10">
+            <TextView android:textSize="14.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimens_10" android:text="收票人手机:" />
+            <TextView android:textSize="14.0sp" android:id="@id/text03" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimens_10" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimens_10">
+            <TextView android:textSize="14.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimens_10" android:text="收票人邮箱:" />
+            <TextView android:textSize="14.0sp" android:id="@id/text04" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimens_10" android:layout_marginRight="@dimen/dimens_10" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimens_10">
+            <TextView android:textSize="14.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimens_10" android:text="单位名称:" />
+            <TextView android:textSize="14.0sp" android:id="@id/text05" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimens_10" android:layout_marginRight="@dimen/dimens_10" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimens_10">
+            <TextView android:textSize="14.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimens_10" android:text="纳税人识别号:" />
+            <TextView android:textSize="14.0sp" android:id="@id/text06" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimens_10" android:layout_marginRight="@dimen/dimens_10" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/layout1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimens_10">
+            <TextView android:textSize="14.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimens_10" android:text="单位地址:" />
+            <TextView android:textSize="14.0sp" android:id="@id/text07" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimens_10" android:layout_marginRight="@dimen/dimens_10" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/layout2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimens_10">
+            <TextView android:textSize="14.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimens_10" android:text="单位电话:" />
+            <TextView android:textSize="14.0sp" android:id="@id/text08" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimens_10" android:layout_marginRight="@dimen/dimens_10" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/layout3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimens_10">
+            <TextView android:textSize="14.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimens_10" android:text="开户银行:" />
+            <TextView android:textSize="14.0sp" android:id="@id/text09" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimens_10" android:layout_marginRight="@dimen/dimens_10" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimens_10">
+            <TextView android:textSize="14.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimens_10" android:text="银行帐号:" />
+            <TextView android:textSize="14.0sp" android:id="@id/text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimens_10" android:layout_marginRight="@dimen/dimens_10" />
+        </LinearLayout>
+        <View android:background="@color/invoice_line" android:layout_width="fill_parent" android:layout_height="@dimen/dimens_1px" android:layout_marginTop="@dimen/dimens_10" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <Button android:textSize="16.0sp" android:textColor="@color/light_blue" android:id="@id/bt_cancel" android:background="@drawable/invoice_top_btn_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="返回修改" android:layout_weight="1.0" />
+            <View android:background="@color/invoice_line" android:layout_width="@dimen/dimens_1px" android:layout_height="fill_parent" />
+            <Button android:textSize="16.0sp" android:textColor="@color/light_blue" android:id="@id/bt_ok" android:background="@drawable/invoice_top_btn_bg_02" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="确认开票" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

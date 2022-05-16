@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/invoice_line" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/rl_title" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="@dimen/dimens_48" android:layout_alignParentTop="true">
+        <ImageButton android:id="@id/ib_back" android:background="@null" android:layout_width="@dimen/dimens_20" android:layout_height="@dimen/dimens_20" android:layout_marginLeft="@dimen/dimens_10" android:src="@mipmap/go_back" android:layout_centerVertical="true" />
+        <TextView android:textSize="18.0sp" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="开票详情" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/bt_sure" android:layout_below="@id/rl_title">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <View android:background="@color/invoice_line" android:layout_width="fill_parent" android:layout_height="@dimen/dimens_3" />
+            <LinearLayout android:orientation="horizontal" android:background="@color/white" android:padding="@dimen/dimens_15" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="16.0sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="收票人手机　" />
+                <TextView android:textSize="14.0sp" android:textColor="@color/text_gray" android:id="@id/edit_phone" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimens_20" />
+            </LinearLayout>
+            <View android:background="@color/invoice_line" android:layout_width="fill_parent" android:layout_height="@dimen/dimens_1px" android:layout_marginLeft="@dimen/dimens_15" />
+            <LinearLayout android:orientation="horizontal" android:background="@color/white" android:padding="@dimen/dimens_15" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="16.0sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="收票人邮箱　" />
+                <TextView android:textSize="14.0sp" android:textColor="@color/text_gray" android:id="@id/edit_email" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimens_20" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:background="@color/white" android:padding="@dimen/dimens_15" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimens_5">
+                <TextView android:textSize="16.0sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="单位名称　　" />
+                <TextView android:textSize="14.0sp" android:textColor="@color/text_gray" android:id="@id/edit_company" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimens_20" />
+            </LinearLayout>
+            <View android:background="@color/invoice_line" android:layout_width="fill_parent" android:layout_height="@dimen/dimens_1px" android:layout_marginLeft="@dimen/dimens_15" />
+            <LinearLayout android:orientation="horizontal" android:background="@color/white" android:padding="@dimen/dimens_15" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="16.0sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="纳税人识别号" />
+                <TextView android:textSize="14.0sp" android:textColor="@color/text_gray" android:id="@id/edit_number" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimens_20" />
+            </LinearLayout>
+            <View android:background="@color/invoice_line" android:layout_width="fill_parent" android:layout_height="@dimen/dimens_1px" android:layout_marginLeft="@dimen/dimens_15" />
+            <LinearLayout android:orientation="horizontal" android:background="@color/white" android:padding="@dimen/dimens_15" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="16.0sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="单位地址　　" />
+                <TextView android:textSize="14.0sp" android:textColor="@color/text_gray" android:id="@id/edit_address" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimens_20" />
+            </LinearLayout>
+            <View android:background="@color/invoice_line" android:layout_width="fill_parent" android:layout_height="@dimen/dimens_1px" android:layout_marginLeft="@dimen/dimens_15" />
+            <LinearLayout android:orientation="horizontal" android:background="@color/white" android:padding="@dimen/dimens_15" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="16.0sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="单位电话　　" />
+                <TextView android:textSize="14.0sp" android:textColor="@color/text_gray" android:id="@id/edit_company_phone" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimens_20" />
+            </LinearLayout>
+            <View android:background="@color/invoice_line" android:layout_width="fill_parent" android:layout_height="@dimen/dimens_1px" android:layout_marginLeft="@dimen/dimens_15" />
+            <LinearLayout android:orientation="horizontal" android:background="@color/white" android:padding="@dimen/dimens_15" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="16.0sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="开户银行　　" />
+                <TextView android:textSize="14.0sp" android:textColor="@color/text_gray" android:id="@id/edit_bank" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimens_20" />
+            </LinearLayout>
+            <View android:background="@color/invoice_line" android:layout_width="fill_parent" android:layout_height="@dimen/dimens_1px" android:layout_marginLeft="@dimen/dimens_15" />
+            <LinearLayout android:orientation="horizontal" android:background="@color/white" android:padding="@dimen/dimens_15" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="16.0sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="银行账号　　" />
+                <TextView android:textSize="14.0sp" android:textColor="@color/text_gray" android:id="@id/edit_bank_number" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimens_20" />
+            </LinearLayout>
+            <View android:background="@color/invoice_line" android:layout_width="fill_parent" android:layout_height="@dimen/dimens_1px" android:layout_marginLeft="@dimen/dimens_15" />
+            <LinearLayout android:orientation="horizontal" android:background="@color/white" android:padding="@dimen/dimens_15" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="16.0sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="发票内容　　" />
+                <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimens_20" android:text="医视数字教材系统V1.0" />
+            </LinearLayout>
+            <View android:background="@color/invoice_line" android:layout_width="fill_parent" android:layout_height="@dimen/dimens_1px" android:layout_marginLeft="@dimen/dimens_15" />
+            <LinearLayout android:orientation="horizontal" android:background="@color/white" android:padding="@dimen/dimens_15" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="16.0sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="发票金额　　" />
+                <TextView android:id="@id/money" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimens_20" />
+            </LinearLayout>
+            <View android:background="@color/invoice_line" android:layout_width="fill_parent" android:layout_height="@dimen/dimens_1px" android:layout_marginLeft="@dimen/dimens_15" />
+            <LinearLayout android:orientation="horizontal" android:background="@color/white" android:padding="@dimen/dimens_15" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="16.0sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="发票状态　　" />
+                <TextView android:textColor="@color/green" android:id="@id/status" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimens_20" />
+            </LinearLayout>
+            <View android:background="@color/invoice_line" android:layout_width="fill_parent" android:layout_height="@dimen/dimens_1px" android:layout_marginLeft="@dimen/dimens_15" />
+            <LinearLayout android:orientation="horizontal" android:background="@color/white" android:padding="@dimen/dimens_15" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="16.0sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="发票代码　　" />
+                <TextView android:id="@id/code" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimens_20" />
+            </LinearLayout>
+            <View android:background="@color/invoice_line" android:layout_width="fill_parent" android:layout_height="@dimen/dimens_1px" android:layout_marginLeft="@dimen/dimens_15" />
+            <LinearLayout android:orientation="horizontal" android:background="@color/white" android:padding="@dimen/dimens_15" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="16.0sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="发票号码　　" />
+                <TextView android:id="@id/number" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimens_20" />
+            </LinearLayout>
+            <View android:background="@color/invoice_line" android:layout_width="fill_parent" android:layout_height="@dimen/dimens_1px" android:layout_marginLeft="@dimen/dimens_15" />
+            <LinearLayout android:orientation="horizontal" android:background="@color/white" android:padding="@dimen/dimens_15" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="16.0sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="校验码　　　" />
+                <TextView android:id="@id/checkCode" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimens_20" />
+            </LinearLayout>
+            <View android:background="@color/invoice_line" android:layout_width="fill_parent" android:layout_height="@dimen/dimens_1px" android:layout_marginLeft="@dimen/dimens_15" />
+            <RelativeLayout android:orientation="horizontal" android:id="@id/layout" android:background="@color/white" android:padding="@dimen/dimens_15" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="16.0sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="开票明细" />
+                <ImageView android:layout_width="15.0dip" android:layout_height="15.0dip" android:src="@mipmap/address_back" android:layout_alignParentRight="true" />
+            </RelativeLayout>
+            <TextView android:textSize="16.0sp" android:textColor="@color/black" android:paddingLeft="@dimen/dimens_15" android:paddingTop="@dimen/dimens_15" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="说明：" />
+            <TextView android:padding="@dimen/dimens_15" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/invoice_info_tips1" />
+            <TextView android:paddingLeft="@dimen/dimens_15" android:paddingRight="@dimen/dimens_15" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/invoice_info_tips2" />
+            <TextView android:padding="@dimen/dimens_15" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/invoice_info_tip3" />
+        </LinearLayout>
+    </ScrollView>
+    <Button android:textSize="16.0sp" android:textColor="@android:color/white" android:layout_gravity="center_horizontal" android:id="@id/bt_sure" android:background="@color/umeng_blue" android:layout_width="fill_parent" android:layout_height="@dimen/dimens_44" android:text="发送到邮箱" android:layout_alignParentBottom="true" />
+</RelativeLayout>

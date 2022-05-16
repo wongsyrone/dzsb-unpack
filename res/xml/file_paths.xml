@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <paths>
+        <external-path name="sdcard" path="" />
+        <files-path name="my_files" path="cache" />
+        <files-path name="files" path="files" />
+        <root-path name="camera_photos" path="" />
+        <root-path name="root-path" path="" />
+        <files-path name="name" path="path" />
+        <cache-path name="name" path="path" />
+        <external-path name="name" path="path" />
+        <external-files-path name="name" path="path" />
+        <external-cache-path name="name" path="path" />
+        <external-media-path name="name" path="path" />
+    </paths>
+</resources>
